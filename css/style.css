@@ -8,13 +8,13 @@
     --behance-blue: #053eff;
     --dribble-pink: #ea4c89;
     --font-family: "Open Sans", sans-serif;
-    --font-size:14px;
-    --width-main:970px;
+    --font-size: 14px;
+    --width-main: 970px;
 }
 
 body {
     font-family: var(--font-family);
-    color:var(--black);
+    color: var(--black);
     text-align: center;
 }
 
@@ -40,7 +40,9 @@ body {
     color: var(--text);
     display: block;
     padding: 25px 0;
-    }
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .active-link {
     color: var(--black);
@@ -88,32 +90,65 @@ body {
 }
 
 .skills-title {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .subtitle {
     font-size: 18px;
     font-weight: 400;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .skills-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 97px;
 }
 
 .img-desc {
-    padding-top: 25px;
-    padding-bottom: 60px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 2%;
-    color: #828282;
+    color: var(--text);
+    width: 90px;
 }
+
+.img-desc-figma {
+    margin-bottom: 70px;
+}
+
 
 .list-stars {
     display: flex;
     gap: 10px;
+}
+
+article:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.portfolio-link {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    /* text-underline-offset: 0%; */
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: var(--black);
+    width: 200px;
+}
+
+article:last-child > a.portfolio-link {
+    width: 260px;
 }
