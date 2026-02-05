@@ -46,6 +46,7 @@ body {
 }
 .menu-link:hover{
     color: var(--dribble-pink);
+    font-weight: 700;
 }
 .active-link {
     color: var(--black);
