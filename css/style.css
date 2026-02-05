@@ -37,17 +37,19 @@ body {
 .menu-link {
     font-weight: 400;
     font-size: 18px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: var(--text);
     display: block;
     padding: 25px 0;
     text-decoration: none;
     cursor: pointer;
 }
-.menu-link:hover{
+
+.menu-link:hover {
     color: var(--dribble-pink);
     font-weight: 700;
 }
+
 .active-link {
     color: var(--black);
 }
@@ -197,8 +199,12 @@ article:last-child>a.portfolio-link {
     text-align: center;
     margin-bottom: 30px;
 }
-.button-contacts:hover{
+
+.button-contacts:hover {
     color: var(--dribble-pink);
+    border: 2px solid var(--dribble-pink);
+    background-color: var(--bg-gray);
+    cursor: pointer;
 }
 
 .social-group {
@@ -212,7 +218,8 @@ article:last-child>a.portfolio-link {
 }
 
 a.icon-social-group:hover {
-    fill: var(--dribble-pink);
+    /* fill: var(--dribble-pink); */
+    opacity: 0.5;
 }
 
 .footer-bottom {
